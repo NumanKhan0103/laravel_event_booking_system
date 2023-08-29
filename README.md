@@ -1,6 +1,10 @@
+# Welcome to the Laravel Event Management System
+
+# ERD
+
 ![Alt Text](https://user-images.githubusercontent.com/63138189/263990595-f23c4839-954a-4d0f-bd03-08f06fb41765.png)
 
-# Welcome to the Laravel Event Management System
+# Introduction
 
 Experience the future of event management with our cutting-edge Laravel Event Management System. This dynamic platform empowers you to effortlessly create, manage, and showcase events, all backed by a rich array of features.
 
