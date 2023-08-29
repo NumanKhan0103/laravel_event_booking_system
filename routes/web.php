@@ -21,13 +21,18 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', WelcomeController::class)->name('welcome');
+// show all events 
 Route::get('/e', EventIndexController::class)->name('eventIndex');
+// show single event 
 Route::get('/e/{id}', EventShowController::class)->name('eventShow');
+// show All gallery 
 Route::get('/gallery', GalleryIndexController::class)->name('galleryIndex');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
